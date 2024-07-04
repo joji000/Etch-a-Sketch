@@ -15,19 +15,19 @@
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button onclick="changeColor('Black')">Black</button>
-                <input type="color" value="#e66465" onchange="changeColor(value)" />
-                <button onclick="changeColor('White')">Eraser</button>
-                <button onclick="changeColor('random')">Random</button>
-                <button onclick="resetBoard()">Reset</button>
+                <button class='blackbtn' onclick="changeColor('Black')">Black</button>
+                <input class='colorpicker' type="color" value="#e66465" onchange="changeColor(value)" />
+                <button class='randombtn' onclick="changeColor('random')">Random</button>
+                <button class='eraserbtn' onclick="changeColor('White')">Eraser</button>
+                <button class='resetbtn' onclick="resetBoard()">Reset</button>
             </div>
-            <div>
-                <input type="text" 
+            <div class="setsize">
+                <input class='sizeinput' type="text" 
                 placeholder="Size of Board" 
                 value="16" 
                 onchange="changeSize(this.value)"
                 />
-                <button>Set Size</button>
+                <button class="setsizebtn">Set Size</button>
             </div>
             <div class="error">Input must be between 2 and 100</div>
         </div>
